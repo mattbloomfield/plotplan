@@ -130,7 +130,7 @@ export function DesignerCanvas() {
 
   // Double-click to close polygon
   const onStageDblClick = useCallback(
-    (e: Konva.KonvaEventObject<MouseEvent>) => {
+    (_e: Konva.KonvaEventObject<MouseEvent>) => {
       if (mode !== 'draw-polygon') return;
       const pos = getStagePointer();
       if (!pos) return;
